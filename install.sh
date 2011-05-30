@@ -1,8 +1,12 @@
 #!/bin/bash
 echo 'kopiowanie'
+git submodule update
 mkdir ~/.vim/
 mkdir ~/.vim/autoload
+mkdir ~/.vim/bundle
+mkdir ~/.vim/bundle/vim-coffee-script
 mkdir ~/.vim/plugin
+cp -R .vim/bundle/vim-coffee-script/* ~/.vim/bundle/vim-coffee-script
 cp -R .vim/ ~/.vim/
 cp -R .vim/after ~/.vim/after
 cp .vim/plugin/Tabular.vim ~/.vim/plugin/Tabular.vim
