@@ -4,7 +4,8 @@ set nocompatible
 set number
 syntax on
 filetype plugin indent on
-:map <F4>o oit 'should ' doendkk9li
+:map ,io oit 'should ' doendkk9li
+:map ,iO Oit 'should ' doend3k11li
 :nmap <F12> :set invnumber<CR>	
 set tabstop=2
 set shiftwidth=2
