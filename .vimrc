@@ -8,10 +8,12 @@ filetype plugin indent on
 :map ,iO Oit 'should ' doend3k11li
 :map ,dso odescribe  doendkk7li
 :map ,dsO Odescribe  doend3k9li
-:map ,do odef endkkA
-:map ,dO Odef end3kA
-:map ,bo obefore(:each) do endkA
-:map ,bO Obefore(:each) do end2kA
+:map ,do odef endkA
+:map ,dO Odef end2kA
+:map ,co oclass endkA
+:map ,cO Oclass end2kA
+:map ,bo obefore(:each) do@ = Factory(:)endkI<Right>
+:map ,bO Obefore(:each) do@ = Factory(:)end2kI<Right> 
 :nmap <F12> :set invnumber<CR>	
 set tabstop=2
 set shiftwidth=2
