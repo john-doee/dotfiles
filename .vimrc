@@ -15,6 +15,7 @@ filetype plugin indent on
 :map ,bo obefore(:each) do@ = Factory(:)endkI<Right>
 :map ,bO Obefore(:each) do@ = Factory(:)end2kI<Right> 
 :nmap <F12> :set invnumber<CR>	
+:map <F9> :Tabularize /:\zs<CR>
 set tabstop=2
 set shiftwidth=2
 set expandtab
