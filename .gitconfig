@@ -1,0 +1,6 @@
+[alias]
+  r = reset HEAD
+  c = commit
+  ca = commit -a
+  a = add -A
+  co = checkout

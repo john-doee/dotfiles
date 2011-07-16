@@ -4,3 +4,4 @@ git submodule update
 mkdir ~/.vim
 cp -R .vim ~
 cp .vimrc ~
+cp .gitconfig ~
