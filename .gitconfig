@@ -4,3 +4,5 @@
   ca = commit -a
   a = add -A
   co = checkout
+  h = push
+  l = pull
