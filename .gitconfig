@@ -1,3 +1,6 @@
+[user]
+  name = Tomasz Tokarski
+  email = tomasz@tomasztokarski.com
 [alias]
   r = reset HEAD
   c = commit
