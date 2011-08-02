@@ -4,10 +4,10 @@ set nocompatible
 set number
 syntax on
 filetype plugin indent on
-:map ,io oit 'should ' dok7li
-:map ,iO Oit 'should ' do2k9li
-:map ,dso odescribe  dok5li
-:map ,dsO Odescribe  do2k7li
+:map ,io oit 'should ' dok9li
+:map ,iO Oit 'should ' do2k11li
+:map ,dso odescribe  dok7li
+:map ,dsO Odescribe  do2k9li
 :map ,do odef kA
 :map ,dO Odef 2kA
 :map ,co oclass kA
