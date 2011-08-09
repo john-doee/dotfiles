@@ -17,6 +17,8 @@ filetype plugin indent on
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize /:\zs<CR>
 :map <F5> :Git add -A:Git commit -m '.':Git push 
+:map <F6> :Git add -A:Git commit -m '.':Git svn rebase
+:map <F7> :Git svn dcommit
 set tabstop=2
 set shiftwidth=2
 set expandtab
