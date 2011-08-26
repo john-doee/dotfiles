@@ -16,10 +16,10 @@ filetype plugin indent on
 :map ,bO Obefore(:each) do@ = Factory(:)2kI<Right> 
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize /:\zs<CR>
-:map <F5> :Git add -A:Git commit -m '.':Git push 
+:map <F5> :Git add -A:Git commit --amend -m '.':Git push 
 :map <F6> :Git add -A:Git commit -m '.':Git svn rebase
 :map <F7> :Git svn dcommit
-:map <F8> :!rake assets:clean:!rake assets:precompile:!cp public/assets/application<Tab> public/application.js
+:map <F8> :!rake assets:clean:!rm -R public/assets:!rake assets:precompile:!cp public/assets/application<Tab> public/application.js
 :nmap <F2> :set fdm=expr:set fde=getline(v:lnum)=~'^\\s#'?1:getline(prevnonblank(v:lnum))=~'^\\s#'?1:getline(nextnonblank(v:lnum))=~'^\\s*#'?1:0
 set tabstop=2
 set shiftwidth=2
