@@ -4,6 +4,8 @@ set nocompatible
 set number
 syntax on
 filetype plugin indent on
+
+"rspec
 :map ,io oit 'should ' dok9li
 :map ,iO Oit 'should ' do2k11li
 :map ,dso odescribe  dok7li
@@ -14,8 +16,11 @@ filetype plugin indent on
 :map ,cO Oclass 2kA
 :map ,bo obefore(:each) do@ = Factory(:)kI<Right>
 :map ,bO Obefore(:each) do@ = Factory(:)2kI<Right> 
+
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize /:\zs<CR>
+
+"git
 :map <F5> :Git add -A:Git commit --amend -m '.':Git push 
 :map <F6> :Git add -A:Git commit -m '.':Git svn rebase
 :map <F7> :Git svn dcommit
