@@ -21,7 +21,7 @@ filetype plugin indent on
 :map <F9> :Tabularize /:\zs<CR>
 
 "git
-:map <F5> :Git add -A:Git commit --amend -m '.':Git push 
+:map <F5> :Git add -A:Git commit -m '.':Git push 
 :map <F6> :Git add -A:Git commit -m '.':Git svn rebase
 :map <F7> :Git svn dcommit
 :map <F8> :!rake assets:clean:!rm -R public/assets:!rake assets:precompile:!cp public/assets/application<Tab> public/application.js
