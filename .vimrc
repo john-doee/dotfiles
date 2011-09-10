@@ -46,6 +46,10 @@ set noswapfile
 colorscheme railscasts
 set guifont=Terminus\ 9
 
+"whitespace
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
+
 function InsertTabWrapper()
   let col = col('.') - 1 
   if !col || getline('.')[col - 1] !~ '\k'
