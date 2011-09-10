@@ -1,4 +1,5 @@
 filetype off
+call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 set nocompatible
 set number
@@ -26,9 +27,22 @@ filetype plugin indent on
 :map <F7> :Git svn dcommit
 :map <F8> :!rake assets:clean:!rm -R public/assets:!rake assets:precompile:!cp public/assets/application<Tab> public/application.js
 :nmap <F2> :set fdm=expr:set fde=getline(v:lnum)=~'^\\s#'?1:getline(prevnonblank(v:lnum))=~'^\\s#'?1:getline(nextnonblank(v:lnum))=~'^\\s*#'?1:0
+
 set tabstop=2
 set shiftwidth=2
+set shiftround
+set showmatch
 set expandtab
+set autoindent
+set copyindent
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+set history=1000         " remember more commands and search history
+set undolevels=1000
+set nobackup
+set noswapfile
 colorscheme railscasts
 set guifont=Terminus\ 9
 
