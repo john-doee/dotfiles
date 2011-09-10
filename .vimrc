@@ -6,6 +6,9 @@ set number
 syntax on
 filetype plugin indent on
 
+" change the mapleader from \ to ,
+let mapleader=","
+
 "rspec
 :map ,io oit 'should ' dok9li
 :map ,iO Oit 'should ' do2k11li
@@ -39,6 +42,7 @@ nnoremap k gk
 nnoremap ; :
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize /:\zs<CR>
+nmap <silent> ,/ :nohlsearch<CR>
 
 "git
 :map <F5> :Git add -A:Git commit -m '.':Git push 
