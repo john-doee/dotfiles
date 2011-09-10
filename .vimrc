@@ -24,6 +24,10 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
+"better cursor moves for wrapped lines
+nnoremap j gj
+nnoremap k gk
+
 nnoremap ; :
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize /:\zs<CR>
