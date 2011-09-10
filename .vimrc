@@ -18,11 +18,19 @@ filetype plugin indent on
 :map ,bo obefore(:each) do@ = Factory(:)kI<Right>
 :map ,bO Obefore(:each) do@ = Factory(:)2kI<Right> 
 
+"            NAVIGATION
+"
 "stronger then will
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 "better cursor moves for wrapped lines
 nnoremap j gj
