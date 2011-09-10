@@ -54,3 +54,27 @@ inoremap <tab> <c-r>=InsertTabWrapper()<CR>
     endif
 " }
 
+
+"create directories if them dosent exists
+augroup AutoMkdir
+    autocmd!
+    autocmd  BufNewFile  *  :call EnsureDirExists()
+augroup END
+function! EnsureDirExists ()
+    let required_dir = expand("%:h")
+    if !isdirectory(required_dir)
+        call AskQuit("Directory '" . required_dir . "' doesn't exist.", "&Create it?")
+
+        try
+            call mkdir( required_dir, 'p' )
+        catch
+            call AskQuit("Can't create '" . required_dir . "'", "&Continue anyway?")
+        endtry
+    endif
+endfunction
+
+function! AskQuit (msg, proposed_action)
+    if confirm(a:msg, a:proposed_action . "\n&Quit?") == 2 
+        exit
+    endif
+endfunction
