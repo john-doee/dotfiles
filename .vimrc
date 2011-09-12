@@ -71,6 +71,7 @@ set history=1000         " remember more commands and search history
 set undolevels=1000
 set nobackup
 set noswapfile
+set backspace=indent,eol,start
 colorscheme railscasts
 set guifont=Terminus\ 9
 

@@ -9,3 +9,6 @@
   co = checkout
   h = push
   l = pull
+[diff]
+  tool = meld
+  guitool = meld
