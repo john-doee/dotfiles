@@ -25,6 +25,7 @@ let mapleader=","
 :nmap ,rv :Rview 
 :nmap ,rj :Rjavascript 
 :nmap ,rs :Rstylesheet 
+:nmap ,T :CommandTFlush
 
 "            NAVIGATION
 "
