@@ -36,10 +36,15 @@ map <left> <nop>
 map <right> <nop>
 
 " Easy window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+inoremap <C-h> ha
+inoremap <C-j> ja
+inoremap <C-k> ka
+inoremap <C-l> la
 
 "better cursor moves for wrapped lines
 nnoremap j gj
