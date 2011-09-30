@@ -50,7 +50,6 @@ inoremap <C-l> la
 nnoremap j gj
 nnoremap k gk
 
-nnoremap ; :
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize /:\zs<CR>
 nmap <silent> ,/ :nohlsearch<CR>
