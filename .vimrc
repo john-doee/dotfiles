@@ -27,6 +27,9 @@ let mapleader=","
 :nmap ,rs :Rstylesheet 
 :nmap ,T :CommandTFlush
 
+" swap ; and :
+nnoremap ; :
+nnoremap : ;
 "            NAVIGATION
 "
 "stronger then will
