@@ -29,7 +29,7 @@ let mapleader=","
 
 " swap ; and :
 nnoremap ; :
-nnoremap : ;
+nnoremap ,; ;
 "            NAVIGATION
 "
 "stronger then will
@@ -48,6 +48,8 @@ inoremap <C-h> ha
 inoremap <C-j> ja
 inoremap <C-k> ka
 inoremap <C-l> la
+inoremap <C-x> lxi
+inoremap <C-s> lXi
 
 "better cursor moves for wrapped lines
 nnoremap j gj
