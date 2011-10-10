@@ -18,13 +18,13 @@ let mapleader=","
 :map ,dO Odef 2kA
 :map ,co oclass kA
 :map ,cO Oclass 2kA
-:map ,bo obefore(:each) do@ = Factory(:)kI<Right>
-:map ,bO Obefore(:each) do@ = Factory(:)2kI<Right> 
-:nmap ,rm :Rmodel 
-:nmap ,rc :controller 
-:nmap ,rv :Rview 
-:nmap ,rj :Rjavascript 
-:nmap ,rs :Rstylesheet 
+:map ,bo obefore do@ = Factory :kI<Right>
+:map ,bO Obefore do@ = Factory :2kI<Right>
+:nmap ,rm :Rmodel
+:nmap ,rc :controller
+:nmap ,rv :Rview
+:nmap ,rj :Rjavascript
+:nmap ,rs :Rstylesheet
 :nmap ,T :CommandTFlush
 
 " swap ; and :
