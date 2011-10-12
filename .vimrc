@@ -147,7 +147,7 @@ inoremap { {}<Esc>i
 autocmd Syntax html,vim inoremap < <lt>><Esc>i| inoremap > <c-r>=ClosePair('>')<CR>
 inoremap ) <c-r>=ClosePair(')')<CR>
 inoremap ] <c-r>=ClosePair(']')<CR>
-inoremap } <c-r>=CloseBracket()<CR>
+inoremap } <c-r>=ClosePair('}')<CR>
 inoremap " <c-r>=QuoteDelim('"')<CR>
 inoremap ' <c-r>=QuoteDelim("'")<CR>
 
@@ -156,14 +156,6 @@ function ClosePair(char)
  return "\<Right>"
  else
  return a:char
- endif
-endf
-
-function CloseBracket()
- if match(getline(line('.') + 1), '\s*}') < 0
- return "\<CR>}"
- else
- return "\<Esc>j0f}a"
  endif
 endf
 
