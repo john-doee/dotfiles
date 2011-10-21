@@ -6,6 +6,9 @@ set number
 syntax on
 filetype plugin indent on
 
+:set spelllang=pl,en
+:set spell
+
 " change the mapleader from \ to ,
 let mapleader=","
 
