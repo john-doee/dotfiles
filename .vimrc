@@ -176,3 +176,12 @@ function QuoteDelim(char)
  return a:char.a:char."\<Esc>i"
  endif
 endf
+
+"cursor color"
+if &term =~ "rxvt-unicode"
+  "Set the cursor white in cmd-mode and orange in insert mode
+  let &t_EI = "\<Esc>]12;white\x9c"
+  let &t_SI = "\<Esc>]12;orange\x9c"
+  "We normally start in cmd-mode
+  silent !echo -e "\e]12;white\x9c"
+endif
