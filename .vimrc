@@ -5,6 +5,7 @@ set nocompatible
 set number
 syntax on
 filetype plugin indent on
+:set mouse=a
 
 :set bomb
 :set encoding=utf-8
@@ -192,7 +193,7 @@ endif
 "folding"
   set foldenable
   set foldmethod=syntax
-  set foldlevel=1
+  set foldlevel=8
     """ Code folding options
   nmap <leader>f0 :set foldlevel=0<CR>
   nmap <leader>f1 :set foldlevel=1<CR>
