@@ -7,7 +7,7 @@ syntax on
 filetype plugin indent on
 :set mouse=a
 
-:set bomb
+":set bomb
 :set encoding=utf-8
 :set fileencoding=utf-8
 :set spelllang=pl,en
