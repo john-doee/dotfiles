@@ -6,6 +6,7 @@ set number
 syntax on
 filetype plugin indent on
 :set mouse=a
+:set ttymouse=xterm
 
 :set bomb
 :set encoding=utf-8
