@@ -97,6 +97,8 @@ set guifont=Terminus\ 9
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
+:map <F3> :%s/\s\+$//e:%s/\r//g
+
 function InsertTabWrapper()
   let col = col('.') - 1 
   if !col || getline('.')[col - 1] !~ '\k'
@@ -206,3 +208,5 @@ endif
   nmap <leader>f7 :set foldlevel=7<CR>
   nmap <leader>f8 :set foldlevel=8<CR>
   nmap <leader>f9 :set foldlevel=9<CR>
+
+au BufRead,BufNewFile *.twig set syntax=htmljinja

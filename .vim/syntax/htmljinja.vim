@@ -1,8 +1,7 @@
 " Vim syntax file
-" Language:	Twig HTML template
-" Maintainer: Gabriel Gosselin <gabrielNOSPAM@evidens.ca>
+" Language:	Jinja HTML template
 " Maintainer:	Armin Ronacher <armin.ronacher@active-4.com>
-" Last Change:	2011 July 29
+" Last Change:	2007 Apr 8
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -17,10 +16,10 @@ if !exists("main_syntax")
 endif
 
 if version < 600
-  so <sfile>:p:h/twig.vim
+  so <sfile>:p:h/jinja.vim
   so <sfile>:p:h/html.vim
 else
-  runtime! syntax/twig.vim
+  runtime! syntax/jinja.vim
   runtime! syntax/html.vim
   unlet b:current_syntax
 endif
