@@ -44,6 +44,8 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+inoremap  <nop>
+inoremap <C-[> <C-c>
 
 " Easy window navigation
 nnoremap <C-h> <C-w>h
@@ -57,6 +59,7 @@ inoremap <C-k> ka
 inoremap <C-l> la
 inoremap <C-x> lxi
 inoremap <C-s> lXi
+
 
 "better cursor moves for wrapped lines
 nnoremap j gj
