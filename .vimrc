@@ -45,7 +45,7 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 inoremap  <nop>
-inoremap <C-[> <C-c>
+inoremap <C-p> <C-c>
 
 " Easy window navigation
 nnoremap <C-h> <C-w>h
