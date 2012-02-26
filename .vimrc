@@ -45,6 +45,7 @@ map <right> <nop>
 inoremap  <nop>
 inoremap <C-p> <C-c>
 :imap jj <C-p>
+:imap qq <C-p>
 
 " Easy window navigation
 nnoremap <C-h> <C-w>h
