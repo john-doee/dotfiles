@@ -97,7 +97,7 @@ set guifont=Terminus\ 9
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
-:map <F3> :%s/\s\+$//e:%s/\r//g
+:map <F3> :retab:%s/\s\+$//e:%s/\r//g
 
 function InsertTabWrapper()
   let col = col('.') - 1 
