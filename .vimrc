@@ -18,8 +18,6 @@ filetype plugin indent on
 let mapleader=","
 
 "rspec
-:map ,io oit 'should ' dok9li
-:map ,iO Oit 'should ' do2k11li
 :map ,dso odescribe  dok7li
 :map ,dsO Odescribe  do2k9li
 :map ,do odef kA
@@ -45,6 +43,10 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+inoremap  <nop>
+inoremap <C-p> <C-c>
+:imap jj <C-p>
+:imap qq <C-p>
 
 " Easy window navigation
 nnoremap <C-h> <C-w>h
@@ -52,12 +54,13 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-inoremap <C-h> ha
-inoremap <C-j> ja
-inoremap <C-k> ka
-inoremap <C-l> la
-inoremap <C-x> lxi
-inoremap <C-s> lXi
+inoremap <C-h> <C-c>ha
+inoremap <C-j> <C-c>ja
+inoremap <C-k> <C-c>ka
+inoremap <C-l> <C-c>la
+inoremap <C-x> <C-c>lxi
+inoremap <C-s> <C-c>lXi
+
 
 "better cursor moves for wrapped lines
 nnoremap j gj
@@ -98,6 +101,9 @@ set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 :map <F3> :retab:%s/\s\+$//e:%s/\r//g
+
+"reload vimrc
+:map <F1> :source $MYVIMRC
 
 function InsertTabWrapper()
   let col = col('.') - 1 
