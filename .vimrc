@@ -39,28 +39,18 @@ nnoremap ,; ;
 "            NAVIGATION
 "
 "stronger then will
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-inoremap  <nop>
-inoremap <C-p> <C-c>
-:imap jj <C-p>
-:imap qq <C-p>
+:nmap <up> <nop>
+:nmap <down> <nop>
+:nmap <left> <nop>
+:nmap <right> <nop>
+:imap jj 
+:imap qq 
 
 " Easy window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-inoremap <C-h> <C-c>ha
-inoremap <C-j> <C-c>ja
-inoremap <C-k> <C-c>ka
-inoremap <C-l> <C-c>la
-inoremap <C-x> <C-c>lxi
-inoremap <C-s> <C-c>lXi
-
 
 "better cursor moves for wrapped lines
 nnoremap j gj
@@ -151,10 +141,6 @@ function! AskQuit (msg, proposed_action)
         exit
     endif
 endfunction
-
-
-
-
 
 
 inoremap ( ()<Esc>i
