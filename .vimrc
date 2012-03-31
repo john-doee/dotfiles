@@ -43,7 +43,7 @@ nnoremap ,; ;
 :nmap <down> <nop>
 :nmap <left> <nop>
 :nmap <right> <nop>
-:imap jj 
+:imap jk 
 :imap qq 
 
 " Easy window navigation
