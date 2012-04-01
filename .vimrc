@@ -18,21 +18,11 @@ filetype plugin indent on
 " change the mapleader from \ to ,
 let mapleader=","
 
-"rspec
-:map ,dso odescribe  dok7li
-:map ,dsO Odescribe  do2k9li
-:map ,do odef kA
-:map ,dO Odef 2kA
-:map ,co oclass kA
-:map ,cO Oclass 2kA
-:map ,bo obefore do@ = Factory :kI<Right>
-:map ,bO Obefore do@ = Factory :2kI<Right>
 :nmap ,rm :Rmodel
 :nmap ,rc :controller
 :nmap ,rv :Rview
 :nmap ,rj :Rjavascript
 :nmap ,rs :Rstylesheet
-:nmap ,T :CommandTFlush
 
 " swap ; and :
 nnoremap ; :
@@ -99,28 +89,7 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:.
 "reload vimrc
 :map <F1> :source $MYVIMRC
 
-function InsertTabWrapper()
-  let col = col('.') - 1 
-  if !col || getline('.')[col - 1] !~ '\k'
-    return "\<tab>"
-  else
-    return "\<c-p>"
-  endif
-endfunction
-
-inoremap <tab> <c-r>=InsertTabWrapper()<CR>
-
-" GUI Settings {
-    " GVIM- (here instead of .gvimrc)
-    if has('gui_running')
-        set guioptions-=T           " remove the toolbar
-        set lines=40                " 40 lines of text instead of 24,
-        "set transparency=10          " Make the window slightly transparent
-    else
-        set term=builtin_ansi       " Make arrow and other keys work
-    endif
-" }
-
+set guioptions-=T           " remove the toolbar
 
 "create directories if them dosent exists
 augroup AutoMkdir
@@ -145,40 +114,6 @@ function! AskQuit (msg, proposed_action)
         exit
     endif
 endfunction
-
-
-inoremap ( ()<Esc>i
-inoremap [ []<Esc>i
-inoremap { {}<Esc>i
-autocmd Syntax html,vim inoremap < <lt>><Esc>i| inoremap > <c-r>=ClosePair('>')<CR>
-inoremap ) <c-r>=ClosePair(')')<CR>
-inoremap ] <c-r>=ClosePair(']')<CR>
-inoremap } <c-r>=ClosePair('}')<CR>
-inoremap " <c-r>=QuoteDelim('"')<CR>
-inoremap ' <c-r>=QuoteDelim("'")<CR>
-
-function ClosePair(char)
- if getline('.')[col('.') - 1] == a:char
- return "\<Right>"
- else
- return a:char
- endif
-endf
-
-function QuoteDelim(char)
- let line = getline('.')
- let col = col('.')
- if line[col - 2] == "\\"
- "Inserting a quoted quotation mark into the string
- return a:char
- elseif line[col - 1] == a:char
- "Escaping out of the string
- return "\<Right>"
- else
- "Starting a string
- return a:char.a:char."\<Esc>i"
- endif
-endf
 
 "cursor color"
 if &term =~ "rxvt-unicode"
