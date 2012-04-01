@@ -102,6 +102,7 @@ set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 :map <F3> :retab:%s/\s\+$//e:%s/\r//g
+:map <F4> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
 
 "reload vimrc
 :map <F1> :source $MYVIMRC
