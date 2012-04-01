@@ -1,6 +1,6 @@
 #!/bin/bash
 echo 'kopiowanie'
-git submodule update
+git submodule update --init
 mkdir ~/.vim
 cp -R .vim ~
 cp .vimrc ~
