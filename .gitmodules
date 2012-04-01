@@ -4,3 +4,6 @@
 [submodule ".vim/bundle/xmledit"]
 	path = .vim/bundle/xmledit
 	url = https://github.com/sukima/xmledit.git
+[submodule ".vim/bundle/ctrlp"]
+	path = .vim/bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git

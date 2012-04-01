@@ -56,6 +56,8 @@ nnoremap <C-l> <C-w>l
 nnoremap j gj
 nnoremap k gk
 
+nnoremap ,t :CtrlP
+
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize /:\zs<CR>
 nmap <silent> ,/ :nohlsearch<CR>
