@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/dbext-vim"]
 	path = .vim/bundle/dbext-vim
 	url = git://github.com/vim-scripts/dbext.vim.git
+[submodule ".vim/bundle/vim-supertab"]
+	path = .vim/bundle/vim-supertab
+	url = git://github.com/ervandew/supertab.git
