@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/vim-supertab"]
 	path = .vim/bundle/vim-supertab
 	url = git://github.com/ervandew/supertab.git
+[submodule ".vim/bundle/vim-smartinput"]
+	path = .vim/bundle/vim-smartinput
+	url = git://github.com/kana/vim-smartinput.git
