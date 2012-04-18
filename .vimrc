@@ -50,7 +50,8 @@ nnoremap k gk
 nnoremap ,t :CtrlP
 
 :nmap <F12> :set invnumber<CR>	
-:map <F9> :Tabularize /:\zs<CR>
+:map <F9> :Tabularize/\w:\zs/l0l1<CR>
+:map <F10> :Tabularize/ =>/l0r1l1<CR>
 nmap <silent> ,/ :nohlsearch<CR>
 
 "git
