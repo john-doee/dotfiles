@@ -27,6 +27,7 @@ let mapleader=","
 " swap ; and :
 nnoremap ; :
 nnoremap ,; ;
+:nmap <Space> ,t
 "            NAVIGATION
 "
 "stronger then will
