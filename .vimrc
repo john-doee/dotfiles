@@ -35,6 +35,7 @@ nnoremap ,; ;
 :nmap <down> <nop>
 :nmap <left> <nop>
 :nmap <right> <nop>
+:nmap jk ;w
 :imap jk ;w
 :imap qq 
 
@@ -138,8 +139,14 @@ endif
   nmap <leader>f4 :set foldlevel=4<CR>
   nmap <leader>f5 :set foldlevel=5<CR>
   nmap <leader>f6 :set foldlevel=6<CR>
-  nmap <leader>f7 :set foldlevel=7<CR>
-  nmap <leader>f8 :set foldlevel=8<CR>
-  nmap <leader>f9 :set foldlevel=9<CR>
 
-au BufRead,BufNewFile *.twig set syntax=htmljinja
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
+:set rnu
