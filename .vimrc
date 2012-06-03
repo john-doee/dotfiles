@@ -36,7 +36,9 @@ nnoremap ,; ;
 :nmap <left> <nop>
 :nmap <right> <nop>
 :nmap jk ;w
+:nmap kjk ;wq
 :imap jk ;w
+:imap kjk ;wq
 :imap qq 
 
 " Easy window navigation
