@@ -1,11 +1,11 @@
 " change the mapleader from \ to ,
 let mapleader=","
 
-:nmap ,rm :Rmodel
-:nmap ,rc :controller
-:nmap ,rv :Rview
-:nmap ,rj :Rjavascript
-:nmap ,rs :Rstylesheet
+:nmap <leader>m :Rmodel<Space>
+:nmap <leader>c :Rcontroller<Space>
+:nmap <leader>v :Rview<Space>
+:nmap <leader>j :Rjavascript<Space>
+:nmap <leader>s :Rstylesheet<Space>
 
 " swap ; and :
 nnoremap ; :
