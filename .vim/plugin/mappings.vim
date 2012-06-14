@@ -23,6 +23,7 @@ nnoremap ,; ;
 :imap jk ;w
 :imap kjk ;wq
 :imap qq 
+:imap vv "+pa
 
 :map <F3> :retab:%s/\s\+$//e:%s/\r//g
 :map <F4> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
