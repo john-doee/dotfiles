@@ -32,6 +32,7 @@ set noswapfile
 set backspace=indent,eol,start
 colorscheme railscasts
 set guifont=Terminus\ 9
+let g:slime_target = "tmux"
 
 "whitespace
 set list
