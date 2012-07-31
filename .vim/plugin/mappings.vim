@@ -10,7 +10,6 @@ let mapleader=","
 " swap ; and :
 nnoremap ; :
 nnoremap ,; ;
-:nmap <Space> ,t
 "            NAVIGATION
 "
 "stronger then will
@@ -49,7 +48,8 @@ nnoremap <C-l> <C-w>l
 nnoremap j gj
 nnoremap k gk
 
-nnoremap ,t :CtrlP
+:nmap <Space> :CtrlP
+:vmap ,t di("")ihhp
 
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize/\w:\zs/l0l1<CR>
