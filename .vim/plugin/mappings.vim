@@ -49,7 +49,8 @@ nnoremap j gj
 nnoremap k gk
 
 :nmap <Space> :CtrlP
-:vmap ,t di("")ihhp
+:vmap ,t di= t("")hhp<F3>yi"
+:vmap ,T di t()hp<F3>
 
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize/\w:\zs/l0l1<CR>
