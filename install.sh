@@ -5,5 +5,6 @@ git submodule foreach git pull origin master
 mkdir ~/.vim
 cp -R .vim ~
 cp .vimrc ~
+cp .vimperatorrc ~
 cp .gitconfig ~
 echo 'installation completed'
