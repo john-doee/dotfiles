@@ -6,7 +6,7 @@ set number
 syntax on
 filetype plugin indent on
 :set mouse=a
-:set ttymouse=xterm
+:set ttymouse=xterm2
 :set tags+=gems.tags
 
 :set encoding=utf-8
