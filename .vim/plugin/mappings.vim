@@ -1,6 +1,8 @@
 " change the mapleader from \ to ,
 let mapleader=","
 
+noremap <leader>y "*y
+noremap <leader>yy "*Y
 :nmap <leader>m :Rmodel<Space>
 :nmap <leader>c :Rcontroller<Space>
 :nmap <leader>v :Rview<Space>
@@ -51,7 +53,6 @@ nnoremap k gk
 :nmap <Space> :CtrlP
 :vmap ,t di= t("")hhp<F3>yi"
 :vmap ,T di t()hp<F3>
-:vmap Y "+y
 
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize/\w:\zs/l0l1<CR>
