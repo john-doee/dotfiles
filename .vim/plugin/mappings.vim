@@ -57,6 +57,7 @@ nnoremap k gk
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize/\w:\zs/l0l1<CR>
 :map <F10> :Tabularize/ =>/l0r1l1<CR>
+:nmap <F11> :set ft=html
 nmap <silent> ,/ :nohlsearch<CR>
 
 "git
