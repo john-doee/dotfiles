@@ -9,3 +9,4 @@ cp .tmux.conf ~
 cp .vimperatorrc ~
 cp .gitconfig ~
 echo 'installation completed'
+vim +BundleInstall +qall

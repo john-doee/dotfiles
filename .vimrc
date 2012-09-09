@@ -14,6 +14,23 @@ filetype plugin indent on
 :set spelllang=pl,en
 :set spell
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'bbommarito/vim-slim'
+Bundle 'jpalardy/vim-slime'
+Bundle 'ervandew/supertab'
+Bundle 'godlygeek/tabular'
+Bundle 'kana/vim-smartinput'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'sukima/xmledit'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-rails'
+
 set tabstop=2
 set shiftwidth=2
 set shiftround
