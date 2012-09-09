@@ -32,6 +32,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
+Bundle 'arnaud-lb/vim-php-namespace'
 
 Bundle 'docteurklein/vim-symfony'
 
