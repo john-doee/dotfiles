@@ -8,7 +8,7 @@
   a = add -A
   co = checkout
   h = push
-  l = pull
+  l = pull --rebase
 [diff]
   tool = meld
   guitool = meld
