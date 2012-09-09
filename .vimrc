@@ -31,6 +31,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
 
+Bundle 'docteurklein/vim-symfony'
+
 set tabstop=2
 set shiftwidth=2
 set shiftround
