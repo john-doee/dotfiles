@@ -18,6 +18,8 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
 Bundle 'bbommarito/vim-slim'
 Bundle 'jpalardy/vim-slime'
 Bundle 'ervandew/supertab'
