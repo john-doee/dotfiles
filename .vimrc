@@ -35,6 +35,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'arnaud-lb/vim-php-namespace'
 
 Bundle 'docteurklein/vim-symfony'
+Bundle 'spf13/PIV'
 
 set tabstop=2
 set shiftwidth=2

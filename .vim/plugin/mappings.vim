@@ -68,6 +68,9 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 :nmap <F2> :set fdm=expr:set fde=getline(v:lnum)=~'^\\s#'?1:getline(prevnonblank(v:lnum))=~'^\\s#'?1:getline(nextnonblank(v:lnum))=~'^\\s*#'?1:0
 
+imap <buffer> <Leader>u <C-O>:call PhpInsertUse()<CR>
+map <buffer> <Leader>u :call PhpInsertUse()<CR>
+
 function! NumberToggle()
   if(&relativenumber == 1)
     set number
