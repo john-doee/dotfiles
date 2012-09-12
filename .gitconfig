@@ -8,7 +8,7 @@
   a = add -A
   co = checkout
   h = push
-  l = pull --rebase
+  l = pull --rebase -s recursive -X ignore-all-space 
 [diff]
   tool = meld
   guitool = meld
