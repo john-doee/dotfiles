@@ -74,3 +74,11 @@ function! NumberToggle()
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
+
+nnoremap <C-K> :call PhpDocSingle()<CR>
+vnoremap <C-K> :call PhpDocRange()<CR>
+let g:pdv_cfg_Package = ''
+let g:pdv_cfg_Version = ''
+let g:pdv_cfg_Author = ''
+let g:pdv_cfg_Copyright = ''
+let g:pdv_cfg_License = ''
