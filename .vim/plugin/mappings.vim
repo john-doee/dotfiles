@@ -75,8 +75,8 @@ endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
 
-nnoremap <C-K> :call PhpDocSingle()<CR>
-vnoremap <C-K> :call PhpDocRange()<CR>
+nnoremap <C-P> :call PhpDocSingle()<CR>
+vnoremap <C-P> :call PhpDocRange()<CR>
 let g:pdv_cfg_Package = ''
 let g:pdv_cfg_Version = ''
 let g:pdv_cfg_Author = ''
