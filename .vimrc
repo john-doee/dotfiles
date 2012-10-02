@@ -103,4 +103,4 @@ set foldmethod=syntax
 set foldlevel=8
 
 :set rnu
-let g:ctrlp_user_command = 'find %s -type f \( ! -path "*/vendor/*" ! -path "*.git/*" ! -path "*/.*" ! -path "*/tmp/*" ! -name "*.so" ! -name "*.swp" ! -name "*.zip" ! -name "*.png" ! -name "*.jpg" ! -path "*/b/*" \)'
+let g:ctrlp_user_command = 'find %s -type f \( ! -path "*/vendor/*" ! -path "*/cache/*" ! -path "*/cms/web/*" ! -path "*.git/*" ! -path "*/.*" ! -path "*/tmp/*" ! -name "*.so" ! -name "*.swp" ! -name "*.zip" ! -name "*.png" ! -name "*.jpg" ! -path "*/b/*" \)'
