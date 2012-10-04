@@ -45,15 +45,13 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
+nnoremap <C-w>s <C-w>s:set relativenumber
+nnoremap <C-w>v <C-w>v:set relativenumber
 "better cursor moves for wrapped lines
 nnoremap j gj
 nnoremap k gk
 
 :nmap <Space> :CtrlP
-:vmap ,t di= t("")hhp<F3>yi"
-:vmap ,T di t()hp<F3>
-
 :nmap <F12> :set invnumber<CR>	
 :map <F9> :Tabularize/\w:\zs/l0l1<CR>
 :map <F10> :Tabularize/ =>/l0r1l1<CR>
@@ -74,6 +72,7 @@ function! NumberToggle()
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
+nnoremap <leader>n :call NumberToggle()<cr>
 
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
