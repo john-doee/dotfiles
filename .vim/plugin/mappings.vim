@@ -26,8 +26,8 @@ nnoremap ,; ;
 :imap qq 
 :imap vv "+pa
 
-:map <F3> :retab:%s/\s\+$//e:%s/\r//g
-:map <F4> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
+:map <F7> :retab:%s/\s\+$//e:%s/\r//g
+:map <F8> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
 
 "reload vimrc
 :map <F1> :source $MYVIMRC
