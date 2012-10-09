@@ -30,7 +30,7 @@ nnoremap ,; ;
 :map <F8> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
 
 "reload vimrc
-:map <F1> :source $MYVIMRC
+:map <leader><F5> :source $MYVIMRC:windo e:bufdo e
 """ Code folding options
 nmap <leader>f0 :set foldlevel=0<CR>
 nmap <leader>f1 :set foldlevel=1<CR>
