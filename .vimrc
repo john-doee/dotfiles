@@ -38,6 +38,7 @@ Bundle 'docteurklein/vim-symfony'
 Bundle 'spf13/PIV'
 Bundle 'mikehaertl/pdv-standalone'
 Bundle 'hallettj/jslint.vim'
+Bundle 'scrooloose/syntastic'
 
 set tabstop=2
 set shiftwidth=2
@@ -105,6 +106,9 @@ set foldlevel=8
 
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 autocmd Filetype php setlocal ts=4 sts=4 sw=4
+
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_jump=1
 
 :set rnu
 let g:ctrlp_user_command = 'find %s -type f \( ! -path "*/vendor/*" ! -path "*/cache/*" ! -path "*/cms/web/*" ! -path "*.git/*" ! -path "*/.*" ! -path "*/tmp/*" ! -name "*.so" ! -name "*.swp" ! -name "*.zip" ! -name "*.png" ! -name "*.jpg" ! -path "*/b/*" \)'
