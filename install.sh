@@ -8,6 +8,7 @@ mkdir ~/.fonts
 cp -R .fonts ~
 fc-cache -vf
 cp .vimrc ~
+cp .zshrc ~
 cp .tmux.conf ~
 cp .vimperatorrc ~
 cp .gitconfig ~
