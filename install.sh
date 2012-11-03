@@ -11,5 +11,6 @@ cp .vimrc ~
 cp .tmux.conf ~
 cp .vimperatorrc ~
 cp .gitconfig ~
+cp .Xresources ~
 echo 'installation completed'
 vim +BundleInstall +qall
