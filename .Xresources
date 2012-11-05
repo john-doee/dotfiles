@@ -6,7 +6,7 @@ URxvt*termName: screen-256color
 URxvt*iconFile: /usr/share/icons/Humanity/apps/128/terminal.svg
 URxvt*letterSpace: -1
 URxvt*depth: 32
-URxvt*background: rgba:2c2c/0000/1e1e/e800
+URxvt*background: rgba:1212/0000/0c0c/e800
 URxvt*foreground: rgba:fdfd/f6f6/e3e3/ffff
 
 !! black dark/light
