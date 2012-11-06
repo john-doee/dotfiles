@@ -39,6 +39,7 @@ Bundle 'spf13/PIV'
 Bundle 'mikehaertl/pdv-standalone'
 Bundle 'hallettj/jslint.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'tiokksar/vim-autotag'
 
 set tabstop=2
 set shiftwidth=2
