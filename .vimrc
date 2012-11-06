@@ -40,6 +40,7 @@ Bundle 'mikehaertl/pdv-standalone'
 Bundle 'hallettj/jslint.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'tiokksar/vim-autotag'
+Bundle 'scrooloose/nerdtree'
 
 set tabstop=2
 set shiftwidth=2
