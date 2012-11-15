@@ -9,6 +9,11 @@
   co = checkout
   h = push
   l = pull --rebase -s recursive -X ignore-all-space 
-[diff]
-  tool = meld
-  guitool = meld
+[merge]
+  tool = vimdiff
+[core]
+  editor = vim
+[color]
+  diff = auto
+  status = auto
+  branch = auto
